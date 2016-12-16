@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Page</title>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	<style type="text/css">
+		/*Additional styles needed for the project*/
+		*{
+			font-family: 'Raleway', sans-serif;
+		}
+		i.material-icons {
+		    vertical-align: middle;
+		}
+		.headerSection{
+			margin: 0;
+			padding: 25px 0;
+			background: url(images/bg.jpg);
+			background-blend-mode: screen;
+		}
+		.largeIcon{
+			font-size: 12rem
+		}
+		.carousel .indicators .indicator-item{
+			border: 1px solid #AAA;
+		}
+	</style>
+	<script type="text/javascript">
+	// Initialized the carousel as it requires explicit initialization
+	$(function(){
+		$('.carousel.carousel-slider').carousel({full_width: true,indicators:true});
+	});
+</script>
+</head>
+<body style="padding:1px 1px 1px 1px:">
+<!-- Nav Bar -->
+<nav>
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Daily Giveaways</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="headerSection grey lighten-1">
+	<div class="container row">
+		<div class="productImage col m4">
+			<img src="images/product.jpg" class="responsive-img">
+		</div>
+		<div class="productDetails col m6">
+			<h3>Apple iPhone 6</h3>
+			<p><i class="material-icons">date_range</i> Released 2014, September</p>
+			<p><i class="material-icons">developer_mode</i>iOS 8, up to iOS 10.0.2</p>
+			<p><i class="material-icons">memory</i>16/64/128GB storage, no card slot</p>
+			<h4>$450.00</h4>
+		</div>
+	</div>
+  </section>
+  <section class="productCarousel">
+	<div class="container row">
+		<div class="carousel carousel-slider">
+		    <a class="carousel-item"><img src="images/apple-iphone-6-2.jpg"></a>
+		    <a class="carousel-item"><img src="images/apple-iphone-6-3.jpg"></a>
+		    <a class="carousel-item"><img src="images/apple-iphone-6-and-iphone-6-plus.jpg"></a>
+		  </div>
+	</div>
+</section>
+  </body>
+</html>

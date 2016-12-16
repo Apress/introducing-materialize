@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Page</title>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	<style type="text/css">
+		/*Additional styles needed for the project*/
+		*{
+			font-family: 'Raleway', sans-serif;
+		}
+		i.material-icons {
+		    vertical-align: middle;
+		}
+		.headerSection{
+			margin: 0;
+			padding: 25px 0;
+			background: url(images/bg.jpg);
+			background-blend-mode: screen;
+		}
+		.largeIcon{
+			font-size: 12rem
+		}
+		.carousel .indicators .indicator-item{
+			border: 1px solid #AAA;
+		}
+	</style>
+	<script type="text/javascript">
+	// Initialized the carousel as it requires explicit initialization
+	$(function(){
+		$('.carousel.carousel-slider').carousel({full_width: true,indicators:true});
+	});
+</script>
+</head>
+<body class="">
+<!-- Nav Bar -->
+<nav>
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Daily Giveaways</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Header section which would occupy full screen space on small screens and be two column layout on medium and higher device -->
+<section class="headerSection grey lighten-1">
+	<div class="container row">
+		<div class="productImage col m4">
+			<img src="images/product.jpg" class="responsive-img">
+		</div>
+		<div class="productDetails col m6">
+			<h3>Apple iPhone 6</h3>
+			<p><i class="material-icons">date_range</i> Released 2014, September</p>
+			<p><i class="material-icons">developer_mode</i>iOS 8, up to iOS 10.0.2</p>
+			<p><i class="material-icons">memory</i>16/64/128GB storage, no card slot</p>
+			<h4>$450.00</h4>
+		</div>
+	</div>
+</section>
+<!-- feature section which would occupy full screen space on small screens and be four column layout on medium and higher device. This will also have tooltip for features -->
+<section class="featureSection">
+	<div class="container row">
+		<div class="col s12 m3 center-align purple-text accent-1 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Display size and resolution">
+			<h1><i class="material-icons largeIcon">phone_iphone</i></h1>
+			<h3>4.7"</h3>
+			<p>750x1334 pixels</p>
+		</div>
+		<div class="col s12 m3 center-align blue-text accent-1 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Camera: Photo and Video">
+			<h1><i class="material-icons largeIcon">photo_camera</i></h1>
+			<h3>8MP</h3>
+			<p>1080p</p>
+		</div>
+		<div class="col s12 m3 center-align amber-text accent-2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="RAM and chipset">
+			<h1><i class="material-icons largeIcon">memory</i></h1>
+			<h3>1GB RAM</h3>
+			<p>Apple A8</p>
+		</div>
+		<div class="col s12 m3 center-align light-green-text accent-2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Battery Capacity and Technology">
+			<h1><i class="material-icons largeIcon">battery_charging_full</i></h1>
+			<h3>1810mAH</h3>
+			<p>Li-Po</p>
+		</div>
+	</div>
+</section>
+<!-- Product carousel to show various product images. -->
+<section class="productCarousel">
+	<div class="container row">
+		<div class="carousel carousel-slider">
+		    <a class="carousel-item"><img src="images/apple-iphone-6-2.jpg"></a>
+		    <a class="carousel-item"><img src="images/apple-iphone-6-3.jpg"></a>
+		    <a class="carousel-item"><img src="images/apple-iphone-6-and-iphone-6-plus.jpg"></a>
+		  </div>
+	</div>
+</section>
+<!-- Inquiry section will contain form for inquiry -->
+<section class="inquiry">
+	<div class="container row">
+		<h2>Out of Stock</h2>
+		<p class="red-text">iPhone 6 is presently unavailable. Please provide us with your details so that we can notify you when other deals are available.</p>
+		<div class="row">
+			<div class="col s12 m4">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="Enter your Name"/>
+			</div>
+			
+			<div class="col s12 m4">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" class="validate" placeholder="Enter your E-mail address" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4">
+				<input type="submit" name="submit" value="Notify me" id="submit" class="btn red waves-effect waves-light" />
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer -->
+<footer class="page-footer">
+	<div class="footer-copyright">
+		<div class="container">
+		&copy; Daily Giveaway
+		</div>
+	</div>
+</footer>
+</body>
+</html>
